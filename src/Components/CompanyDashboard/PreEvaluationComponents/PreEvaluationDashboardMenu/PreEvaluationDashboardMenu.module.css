@@ -1,0 +1,74 @@
+.DashboardMenu {
+  padding: 1rem;
+  width: 100%;
+  border-top-right-radius: 14px;
+  border-top-left-radius: 14px;
+}
+.MenuWrapper {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  width: 100%;
+  padding-left: 0.9rem;
+}
+.FilterImg {
+  margin-left: auto;
+  cursor: pointer;
+}
+.SearchBar {
+  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+}
+.CandidateHeadingWrapper {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.CandidateHeading {
+  font-size: 16px;
+  font-weight: 600;
+}
+.Dot {
+  color: var(--font-grey-50);
+  margin-bottom: 0.4rem;
+}
+.CandidateNumber {
+  color: var(--font-grey-50);
+  font-size: 16px;
+  font-weight: 600;
+}
+.CustomBtnClass {
+  color: black;
+  border: 1px solid var(--border-grey);
+  font-size: 14px;
+  padding: 0.1rem 1rem;
+}
+
+.inputField {
+  width: 100%;
+  padding: 5px;
+  padding-left: 3rem;
+  background-color: var(--pent-background-grey);
+  border: 2px solid var(--background-grey);
+  font-weight: 600;
+  color: var(--font-grey-50);
+}
+
+.inputIcons i {
+  position: absolute;
+  margin-right: 10px;
+}
+
+.inputIcons {
+  position: relative;
+  /* width: 100%; */
+}
+.SearchBarInput {
+  width: 100%;
+}
+.icon {
+  padding: 10px;
+  color: rgb(171, 168, 168);
+  min-width: 50px;
+  text-align: center;
+}

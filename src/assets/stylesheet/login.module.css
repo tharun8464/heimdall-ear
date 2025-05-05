@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+/* * { */
+/* font-family: 'Plus Jakarta Sans', sans-serif; */
+/* } */
+:root {
+  --primary: coral;
+  --secondary: #3667e9;
+  --light-green-success: #2282761a;
+  --primary-green: #228276;
+  --primary-light-green: rgba(34, 130, 118, 0.1);
+  --secondary-green: #61b466;
+  --primary-violet: #4b4ded;
+  --sec-light-green: rgba(34, 130, 118, 0.2);
+  --light-yellow-warning: #aa743c1a;
+  --brown-warning: #aa743c;
+  --light-red-error: rgba(214, 97, 90, 0.1);
+  --red-error: #d6615a;
+  --highlight-green: rgba(34, 130, 118, 0.1);
+  /* grey */
+  --border-grey: #e3e3e3;
+  --dark-grey: #656565;
+  --background-grey: #f1f4f5;
+  --sec-background-grey: #fafafa;
+  --ter-background-grey: #f1f1f1;
+  --quad-background-grey: #b3b3b3;
+  --pent-background-grey: #f4f7f8;
+
+  --icon-grey: #333333bf;
+  --sec-grey: #333333;
+  --font-grey-25: rgba(51, 51, 51, 0.25);
+  --font-grey-05: rgba(51, 51, 51, 0.05);
+
+  --font-grey-50: rgba(51, 51, 51, 0.5);
+  --font-grey-10: rgba(51, 51, 51, 0.1);
+  --font-grey-sec: #888;
+  --font-grey-75: rgba(51, 51, 51, 0.75);
+  --font-light-grey-6: rgba(255, 255, 255, 0.6);
+  --font-light-grey-85: rgba(255, 255, 255, 0.85);
+
+  --white: #fff;
+  --black: #000;
+  /* box shadow */
+  --primary-box-shadow: 0px 2px 4px 0px #00000014;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  /* width: 8px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* background: #D0CFCF; */
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bcd9d8;
+  /* background: #33333040;
+  border-radius: 14px; */
+ 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bcd9d8;
+  /* background: #33333080; */
+ 
+}
+
+@media only screen and (max-width: 1336px) {
+  * {
+    -ms-overflow-style: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+    /* display: block; */
+    /* width: 8px; */
+   
+  }
+}
+
+.loginLanding {
+  /* background: url("../images/loginBackground.jpeg"); */
+  background: #ffffff;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 100vh;
+  padding: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card1 {
+  background: url("../images/logintree.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px 0 0 12px;
+  z-index: 10;
+}
+
+.Card2 {
+  background: url("../images/signup.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 12px 12px 0;
+}

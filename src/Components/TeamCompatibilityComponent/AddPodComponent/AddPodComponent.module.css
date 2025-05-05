@@ -1,0 +1,108 @@
+.Wrapper {
+  /* width: 584px; */
+  margin: auto;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px dashed var(--primary-50, rgba(34, 130, 118, 0.5));
+  background: var(--primary-10, rgba(34, 130, 118, 0.1));
+}
+
+.ItemCont {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 14px;
+  background: #fff;
+  margin: 20px;
+}
+
+.TextCont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.TextCont > div:first-child p {
+  color: var(--typography-100, #333);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 510;
+  line-height: normal;
+}
+
+.BorderBox {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 5px;
+  border: 1px solid var(--neutrals-stroke, #e3e3e3);
+  background: #fff;
+}
+
+.BorderBox > p {
+  color: var(--typography-75, rgba(51, 51, 51, 0.75));
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 510;
+  line-height: normal;
+}
+
+.SideCont {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.PercentBox {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid var(--neutrals-stroke, #e3e3e3);
+  background: #fff;
+}
+
+.PercentBox > p {
+  color: var(--typography-75, rgba(51, 51, 51, 0.75));
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 510;
+  line-height: normal;
+}
+
+.IconBox {
+  display: flex;
+  padding: 6px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid var(--neutrals-stroke, #e3e3e3);
+  background: #fff;
+}
+
+.Common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Common > p {
+  color: var(--primary-100, #228276);
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 16px;
+}
+
+.EditableInput {
+  width: 60px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  font-size: 14px;  
+}

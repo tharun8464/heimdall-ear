@@ -1,0 +1,47 @@
+.tagMenuContainer {
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid var(--border-grey);
+  z-index: 100;
+}
+.enterProportion {
+  font-weight: 500;
+}
+.common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 35px;
+  margin: 10px 12px;
+}
+.fullWidth {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.buttonContainer {
+  margin: 10px 12px;
+  justify-content: start;
+  gap: 5px;
+}
+.btnStyle {
+  padding: 3px 10px;
+  background-color: rgb(242, 247, 246);
+  color: rgb(60, 136, 122);
+  border: 1px solid rgb(60, 136, 122);
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 500;
+}
+.btnStyleAfterClick {
+  padding: 3px 10px;
+  background-color: var(--primary-green);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 500;
+}

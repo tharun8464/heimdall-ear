@@ -1,0 +1,184 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--white);
+  position: relative;
+  border-top-right-radius: 14px;
+}
+.CloseBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.CandidateInfoWrapper {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.ChipsWrapper {
+  display: flex;
+  gap: 0.6rem;
+}
+.SelectWrapper {
+  display: flex;
+  gap: 0.6rem;
+}
+.Name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.CompanyInfo {
+  color: var(--font-grey-25);
+  font-size: 16px;
+}
+.SelectReportTypeWrapper {
+  display: flex;
+  padding: 0.6rem 1rem;
+  gap: 0.6rem;
+  border-top: 1px solid var(--border-grey);
+  border-bottom: 1px solid var(--border-grey);
+}
+.SelectReportTypeWrapperAction {
+  margin-left: auto;
+}
+.CustomChipsClass {
+  border-radius: 20px !important;
+  font-size: 14px !important;
+  background-color: transparent !important;
+  border: 1px solid var(--border-grey) !important;
+  padding: 0 0.6rem !important;
+  color: var(--font-grey-50) !important;
+  font-weight: 500 !important;
+  height: 27px !important;
+}
+.SelectedChipClass {
+  border-radius: 20px !important;
+  font-size: 14px !important;
+  background-color: var(--primary-green) !important;
+  border: 1px solid var(--border-grey) !important;
+  padding: 0 0.6rem !important;
+  color: white !important;
+  font-weight: 500 !important;
+  height: 27px !important;
+}
+
+.SelectedClass {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-radius: 5px;
+}
+.SelectPopoverButton {
+  border: 1px solid var(--border-grey);
+  padding: 0.2rem 0.8rem;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+  margin-right: 20px;
+}
+.SelectPopoverButton:focus {
+  outline: 0px;
+}
+.NodataText {
+  color: var(--red-error);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+}
+.PullBtn {
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+  margin: auto;
+}
+
+.SelectPopoverPanel {
+  position: absolute;
+
+  background-color: var(--white);
+
+  border-radius: 10px;
+  border: 1px solid var(--border-grey);
+  padding: 0.1rem;
+  width: 122px;
+
+  /* Card */
+  box-shadow: var(--primary-box-shadow);
+}
+
+.Options {
+  padding: 6px 10px;
+}
+
+.CursorPointer {
+  cursor: pointer;
+}
+
+.Lines > li {
+  height: 3px;
+  width: 52px;
+  position: absolute;
+  left: -3px;
+  top: calc(50% - 2px);
+}
+
+.Lines > li:nth-child(1) {
+  transform: rotate(90deg);
+}
+.Lines > li:nth-child(2) {
+  transform: rotate(-150deg);
+}
+.Lines > li:nth-child(3) {
+  transform: rotate(-30deg);
+}
+
+.Lines > li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: #fff;
+}
+.Lines > li:after {
+  left: 0;
+}
+
+.Circle {
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-green);
+  margin-right: 1rem; /* Add margin to separate image and text */
+  position: relative;
+}
+.Circle img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.UserDp {
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.TextInfo {
+  flex-grow: 1; /* Allow text to take remaining space */
+}
+
+.TextColumn {
+  font-size: 14px;
+  font-weight: 500;
+}

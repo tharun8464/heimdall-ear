@@ -1,0 +1,12 @@
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.BulletWrapper {
+  display: flex;
+  gap: 0.6rem;
+ 
+}
+.ChipClass {
+  font-weight: 600;
+}

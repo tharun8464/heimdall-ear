@@ -1,0 +1,182 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+
+  border: Mixed solid #e3e3e3;
+  position: relative;
+  border-radius: 14px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.DashboardWrapper {
+  box-shadow: 0px 2px 4px 0px #00000014;
+  border-radius: 14px;
+}
+.HeadingRow {
+  background: #F1F1F1;
+}
+.ViewInterviewStatus {
+  color: var(--primary-green);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ViewInterviewStatusWrapper {
+  background-color: var(--sec-background-grey);
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  /* cursor: pointer; */
+}
+.DashboardMenu {
+  padding: 1rem;
+  width: 100%;
+}
+.MenuWrapper {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  width: 100%;
+  padding-left: 0.9rem;
+  
+}
+.FilterImg {
+  margin-left: auto;
+  cursor: pointer;
+}
+.SearchBar {
+  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+}
+.Wrapper th {
+  padding: 1rem 0;
+  padding-left: 1rem;
+  border: 1px solid var(--border-grey);
+}
+.HeadingText {
+  width: 74px;
+}
+
+.SectionWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #E3E3E3;
+  border-radius: 14px;
+  position:relative;
+}
+
+.InterviewStatusWrapper {
+  background-color: var(--sec-background-grey);
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.InterviewStatus {
+  color: var(--primary-green);
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.RightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-left: 1px solid var(--border-grey);
+}
+.MenuCustomClass {
+  border-top-right-radius: 0px !important;
+}
+
+.RowCustomClass td {
+  border: 0px !important;
+  border-bottom: 1px solid var(--border-grey);
+  background-color: var(--white);
+  padding: 0.6rem;
+}
+.CandidateDetailsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  /* padding: 1rem; */
+  height: 80vh;
+  overflow-y: scroll;
+}
+.TeamTable {
+  width: 100%;
+}
+
+.CreatePodComponent {
+  border: 2px dashed var(--border-grey);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 8px;
+}
+.CreatePodTip {
+  color: var(--font-grey-50);
+}
+
+.SearchBar {
+  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+}
+
+.CandidateHeadingWrapper {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.CandidateHeading {
+  font-size: 14px;
+  font-weight: 500;
+}
+.Dot {
+  color: var(--font-grey-50);
+  margin-bottom: 0.4rem;
+}
+.CandidateNumber {
+  color: var(--font-grey-50);
+  font-size: 14px;
+  font-weight: 500;
+}
+.inputField {
+  width: 50%;
+  padding: 5px;
+  padding-left: 3rem;
+  background-color: var(--pent-background-grey);
+  border: 2px solid var(--background-grey);
+  font-weight: 600;
+  color: var(--font-grey-50);
+} 
+
+.inputFieldShort {
+  width: 100%;
+  padding: 5px;
+  padding-left: 3rem;
+  background-color: var(--pent-background-grey);
+  border: 2px solid var(--background-grey);
+  font-weight: 600;
+  color: var(--font-grey-50);
+}
+
+.inputIcons i {
+  position: absolute;
+  margin-right: 10px;
+}
+
+.inputIcons {
+  position: relative;
+  width: 100%;
+}
+
+.icon {
+  padding: 10px;
+  color: rgb(171, 168, 168);
+  min-width: 50px;
+  text-align: center;
+  
+}

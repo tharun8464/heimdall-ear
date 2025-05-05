@@ -1,0 +1,59 @@
+.Success {
+  background-color: var(--light-green-success) !important;
+  color: var(--primary-green) !important;
+}
+.Error {
+  background: var(--light-red-error, rgba(214, 97, 90, 0.1)) !important;
+  color: var(--red-error) !important;
+}
+.Warning {
+  color: var(--brown-warning) !important;
+  background: var(--light-yellow-warning, rgba(170, 116, 60, 0.1)) !important;
+}
+.Chip {
+  border-radius: 6px !important;
+  background-color: var(--font-grey-10);
+  font-weight: 600;
+}
+/* solids */
+.SolidError {
+  background-color: var(--red-error) !important;
+  color: var(--white) !important;
+}
+.SolidSuccess {
+  background-color: var(--primary-green) !important;
+  color: var(--white) !important;
+}
+.SolidWarning {
+  background-color: var(--brown-warning) !important;
+  color: var(--white) !important;
+}
+.TalentHighplus {
+  background-color: var(--primary-violet) !important;
+  color: var(--white) !important;
+}
+.TalentHigh {
+  background-color: var(--primary-green) !important;
+  color: var(--white) !important;
+}
+.TalentMedium {
+  background-color: var(--brown-warning) !important;
+  color: var(--white) !important;
+}
+.TalentLow {
+  background-color: var(--red-error) !important;
+  color: var(--white) !important;
+}
+.TalentTop {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: var(--white) !important;
+}
+.TalentTopFive {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: var(--black) !important;
+}
+.Regular {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888888 !important;
+}

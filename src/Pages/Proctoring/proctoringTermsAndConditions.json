@@ -1,0 +1,11 @@
+[
+    {
+      "title" : "Audio and video",
+      "descrption" : "When prompted by your browser, please grant permission for access to your audio and video. Please note that both audio and video should be enabled; otherwise, you won't be able to proceed. Additionally, we kindly request that you secure a quiet and uninterrupted space for the interview, minimizing background noise. This will ensure clear communication and focus during the session. We understand that unexpected circumstances may arise, but if possible, please create an environment where you can remain undisturbed for the duration of the session."
+    },
+    {
+      "title" : "Recordings",
+      "descrption" : "The entire interview session will be recorded for quality assurance and review purposes and in order to ensure a professional atmosphere, we kindly ask that you present yourself in a neat and presentable manner during the conference. We also request that you select a suitable background that reflects professionalism and creates a conducive environment."
+    }
+
+]

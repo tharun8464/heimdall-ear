@@ -1,0 +1,21 @@
+.Wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 40%;
+  width: 0.4rem;
+  height: 1rem;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.Red-bg {
+  background-color: var(--red-error);
+}
+.Green-bg {
+  background-color: var(--secondary-green);
+}
+.Yellow-bg {
+  background-color: var(--brown-warning);
+}
+.Violet-bg {
+  background-color: var(--primary-violet);
+}

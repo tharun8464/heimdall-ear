@@ -1,0 +1,431 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* gap: 1rem;
+    padding: 1rem; */
+  /* border-radius: 14px; */
+  /* width: 680px; */
+  width: 875px;
+  /* height: 582px; */
+  min-height: 350px;
+  gap: 0px;
+  border-radius: 1rem;
+  /* opacity: 0px; */
+
+  /* width: 604px;
+height: 516px; */
+  /* height: 388px; */
+  /* top: -128px; */
+  /* gap: 0px;
+border-radius: 23.47px;
+opacity: 0px; */
+  /* position: relative; */
+  /* background-color: brown; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Layoutt {
+  /* width: 875px;
+  height: 54px;
+  padding: 15px 709px 11px 27px;
+  gap: 301.75px;
+  border-radius: 23.47px 23.47px 0px 0px;
+  opacity: 0px;
+  box-shadow: 0px 1.68px 6.71px 0px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 1);
+   */
+  display: flex;
+  width: 875px;
+  height: 54px;
+  padding: 15.09px 19px 15.21px 32px;
+  gap: 301.75px;
+  border-radius: 23.47px 23.47px 0px 0px;
+  /* opacity: 0px; */
+  box-shadow: 0px 1.68px 6.71px 0px #00000026;
+
+  /* width: 604px;
+height: 54px;
+padding: 15.09px 12px 15.21px 33.39px;
+gap: 301.75px;
+border-radius: 23.47px 23.47px 0px 0px;
+opacity: 0px;
+background-color: rgba(255, 255, 255, 1);
+box-shadow: 0px 1.68px 6.71px 0px rgba(0, 0, 0, 0.15); */
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: yellow; */
+}
+
+.Heading {
+  /* font-size: 16px;
+    font-weight: 500; */
+  width: 75px;
+  height: 20px;
+  top: 16.94px;
+  left: 33.39px;
+  gap: 0px;
+  /* opacity: 0px; */
+  font-size: 16.76px;
+  font-weight: 700;
+  line-height: 20.01px;
+  text-align: left;
+  color: rgba(136, 136, 136, 1);
+  /* position: relative; */
+}
+.CancelButtonLayout {
+  width: 109px;
+  height: 23.71px;
+
+  gap: 0px;
+  /* opacity: 0px; */
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.CancelButton {
+  width: 70px;
+  height: 20px;
+  top: 17px;
+  left: 522px;
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 16.76px;
+  font-weight: 510;
+  line-height: 20.01px;
+  text-align: left;
+  color: rgba(214, 97, 90, 1);
+}
+
+.Upper {
+  display: flex;
+  flex-direction: column;
+  /* background-color: lightgreen; */
+}
+.Linksgenerated {
+  flex: 50 !important;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* align-items: stretch; */
+  /* background-color: yellow; */
+  width: 100%;
+}
+.LinksText {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  height: 15%;
+  width: 95%;
+  margin: 10px 0;
+  /* background-color: blue; */
+}
+.LinksgeneratedText {
+  /* font-family: SF Pro Display; */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.71px;
+  letter-spacing: -0.15399999916553497px;
+  text-align: left;
+  color: #333333;
+}
+.CalendarIcon {
+  width: 12px;
+  height: 13.33px;
+  /* top: 1.33px;
+left: 2px; */
+  gap: 0px;
+  /* opacity: 0px; */
+  /* color: #888888; */
+}
+.Extendtime {
+  width: 81px;
+  height: 17px;
+  gap: 0px;
+  /* opacity: 0px; */
+
+  /* font-family: SF Pro; */
+  font-size: 14px;
+  font-weight: 510;
+  line-height: 16.71px;
+  text-align: left;
+  color: #888888;
+}
+.Tableheader {
+  width: 811px;
+  height: 14px;
+  /* top: 111px;
+left: 32px; */
+  gap: 0px;
+  /* opacity: 0px; */
+}
+.Headertext {
+  width: 131px;
+  height: 14px;
+  gap: 0px;
+  /* opacity: 0px; */
+  color: #33333380;
+  /* font-family: SF Pro; */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.32px;
+  text-align: left;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.SharedMembersTable {
+  width: 100%;
+  /* height: 50%; */
+  /* width: 357px; */
+  /* height: 263px; */
+  /* height: 200px; */
+  height: 190px;
+  /* flex: 20; */
+  /* top: 116px;
+  left: 487px; */
+  /* gap: 18px; */
+  /* border-radius: 14px ; */
+  /* opacity: 0px; */
+  /* background-color: lightcoral; */
+}
+.HeadingRow {
+  /* background: #F1F1F1; */
+  background: rgba(241, 241, 241, 1);
+  /* width: 357px; */
+  /* width: 100%; */
+  height: 39px;
+  gap: 0px;
+  /* opacity: 0px; */
+}
+.RowMeasurement {
+  width: 875px;
+  height: 48px;
+  /* top: 140px; */
+  padding: 12px 60px 12px 32px;
+  gap: 60px;
+  /* opacity: 0px; */
+  /* background: #2282761A; */
+  /* color: red; */
+}
+.RowMeasurement:hover {
+  background: #2282761a;
+}
+
+.TableHeaderText {
+  /* width: 131px; */
+  height: 14px;
+  /* background-color: palevioletred; */
+}
+.HeadingText {
+  /* width: 131px; */
+  height: 14px;
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.32px;
+  /* text-align: left; */
+  color: #33333380;
+}
+.LinkNameText {
+  width: 104px;
+  height: 14px;
+  /* top: 17px;
+left: 32px; */
+  gap: 6px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.32px;
+  text-align: left;
+  color: #333333;
+}
+.LinkIcon {
+  width: 261px;
+  height: 24px;
+
+  gap: 8px;
+  border-radius: 4px;
+  /* opacity: 0px; */
+  /* color: #D9D9D9; */
+  display: flex;
+  align-items: end;
+}
+.LinkText {
+  width: 228px;
+  height: 12px;
+  /* top: 4.5px;
+left: 10px; */
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 11.93px;
+  text-align: left;
+  color: #333333;
+}
+.CopySolid {
+  width: 12.5px;
+  height: 12.5px;
+  /* top: 1.25px;
+left: 1.25px; */
+  gap: 0px;
+  /* opacity: 0px; */
+  color: #eeeeee;
+  fill: #eeeeee;
+}
+.CreatedOn {
+  /* width: 73px; */
+  height: 14px;
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.32px;
+  /* text-align: left; */
+  color: #333333;
+}
+
+.Activity {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ActivityText {
+  /* width: 73px; */
+  height: 19px;
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 17px;
+  font-weight: 510;
+  line-height: 19.09px;
+  /* text-align: left; */
+  color: #333333;
+}
+.ActivityVisitText {
+  /* font-family: SF Pro; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.32px;
+  /* text-align: left; */
+  color: #333333;
+}
+
+.RecentVisit {
+  flex: 50;
+  /* background-color: #228276; */
+  width: 100%;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.RecentVisitPlacement {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  height: 15%;
+  width: 95%;
+  /* background-color: blue; */
+}
+.RecentVisitText {
+  width: 234px;
+  height: 17px;
+  /* top: 328px;
+left: 32px; */
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro Display; */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.71px;
+  letter-spacing: -0.15399999916553497px;
+  text-align: left;
+}
+.Midline {
+  width: 875px;
+  height: 0px;
+  top: 308px;
+  gap: 0px;
+  border: 1.68px;
+  /* opacity: 0px; */
+  border: 1.68px solid #e3e3e3;
+}
+.UserDp {
+  /* padding: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative; */
+
+  width: 33px;
+  height: 33px;
+  gap: 0px;
+  /* opacity: 0px; */
+  border-radius: 50%;
+}
+.TableSecNameText {
+  /* width: 104px; */
+  height: 14px;
+  /* top: 10px;
+left: 45px; */
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.32px;
+  /* text-align: left; */
+  color: #333333;
+}
+.TableSecRoleText {
+  /* width: 104px; */
+  height: 14px;
+  /* top: 17px; */
+  /* left: 235px; */
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14.32px;
+  text-align: center;
+  color: #333333;
+}
+.TableSecTimeText {
+  /* width: 54px; */
+  height: 24px;
+  /* top: 9px;
+left: 528px; */
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 20px;
+  font-weight: 510;
+  line-height: 23.87px;
+  text-align: center;
+  color: #333333;
+}
+.TableSecAnalyticsText {
+  width: 90px;
+  height: 16px;
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 14px;
+  font-weight: 590;
+  line-height: 16px;
+  /* text-align: left; */
+  color: #228276;
+}

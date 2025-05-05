@@ -1,0 +1,9 @@
+.Wrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  justify-content: space-between;
+  background-color: var(--sec-background-grey);
+}
+.ContentWrapper {
+  width: 100%;
+}

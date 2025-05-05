@@ -1,0 +1,34 @@
+.Button {
+  border-radius: 8px;
+  padding: 6px 20px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  justify-content: center;
+  color: var(--white);
+  /* text-transform: capitalize; */
+  gap: 0.6rem;
+  background-color: transparent;
+}
+.ButtonIcon {
+  height: 1.2rem;
+}
+.PrimaryBtn {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+.DefaultDisabledClass {
+  opacity: 0.5;
+}
+.SecondaryBtn {
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+}
+.TransparentBtn {
+  border: 0px;
+  background: transparent;
+  color: var(--primary-green);
+  margin-left: auto;
+}

@@ -1,0 +1,15 @@
+.Wrapper {
+  width: 60rem;
+  background-color: var(--white);
+  border-radius: 12px; 
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+
+}
+.BtnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}

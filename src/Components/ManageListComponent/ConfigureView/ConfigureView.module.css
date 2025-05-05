@@ -1,0 +1,10 @@
+.BtnClass {
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+}
+.RecepientOrgBtn {
+  color: #228276;
+  border: 1px solid #228276;
+  padding: 0 10px;
+  border-radius: 20px;
+}

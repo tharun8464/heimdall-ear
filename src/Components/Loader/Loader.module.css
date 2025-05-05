@@ -1,0 +1,43 @@
+.LoaderMain {
+  border: 10px solid var(--main-grey);
+  border-radius: 50%;
+  border-top: 1rem solid var(--light-ter-blue);
+  width: 10rem;
+  height: 10rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+.LoaderButton {
+  border: 5px solid var(--font-grey-50);
+  border-radius: 50%;
+  border-top: 5px solid var(--primary-light-green);
+  width: 1.3rem;
+  height: 1.3rem;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+}
+
+.LoaderRedButton {
+  border-top: 5px solid var(--light-red);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

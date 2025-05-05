@@ -1,0 +1,17 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.HeadingWrapper {
+  display: flex;
+  gap: 1rem;
+}
+.Skill {
+  font-weight: 500;
+}
+.ChipsWrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

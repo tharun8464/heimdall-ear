@@ -1,0 +1,41 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.ItemWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.AboutHeading {
+  font-weight: 600;
+  font-size: 16px;
+}
+.Heading {
+  font-weight: 600;
+  font-size: 14px;
+}
+.ActionBtns {
+  display: flex;
+  gap: 1rem;
+}
+.InputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.ProfileSummary {
+  border: 1px solid var(--border-grey);
+  border-radius: 12px;
+}
+.ErrorMessage {
+  color: var(--red-error);
+  font-size: 12px;
+}
+@media screen and (max-width: 650px) {
+  .AccordionDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

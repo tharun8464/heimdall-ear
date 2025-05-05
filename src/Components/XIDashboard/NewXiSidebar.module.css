@@ -1,0 +1,46 @@
+.Wrapper {
+    /* background: var(--background-grey); */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 230px;
+    padding: 2.2rem 0;
+    height: 100vh;
+    background: #fff;
+    padding-right: 1rem;
+  }
+  .PostJobBtn {
+    background-color: var(--primary-green);
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+  
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+  }
+  .MenuWrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .MenuWrapper.Active {
+    background-color: rgba(34, 130, 118, 0.1);
+  }
+  .Text {
+    font-size: 14px;
+    color: rgba(116, 116, 116, 1);
+  }
+  @media only screen and (max-width: 600px) {
+    .Wrapper {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,68 @@
+#code changes for develop
+name: Staging VM Frontend - CICD
+on:
+  push:
+    branches:
+          - staging
+env:
+  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+  DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+  DEPLOY_PASS: ${{ secrets.DEPLOY_PASS }}
+  IMAGE_REPO_NAME: valuematrix/vm-frontend
+jobs:
+  BuildDockerImage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build Development Docker Image
+      if: github.ref == 'refs/heads/staging'
+      run: |
+         echo Logging in to Docker Hub...
+         docker login -u=$DOCKER_USERNAME -p=$DOCKER_PASSWORD
+         echo Building the Docker image...
+         docker build . --file Dockerfile --tag $IMAGE_REPO_NAME:${GITHUB_REF##*/}.$GITHUB_RUN_NUMBER --build-arg REACT_APP_BACKEND_URL=http://stage.valuematrix.ai/platform/api --build-arg REACT_APP_FRONTEND_URL=http://stage.valuematrix.ai/platform --build-arg REACT_APP_HEIMDALL_BASELINING_URL=http://stage.valuematrix.ai/platform/api/heimdall/baselining --build-arg REACT_APP_HEIMDALL_URL=http://stage.valuematrix.ai/platform/api/heimdall --build-arg REACT_APP_PSY_URL=http://stage.valuematrix.ai/platform/api/psychometric/candidate --build-arg REACT_APP_DYTE_ORGID=c2c3dde8-0e37-45ed-9d4a-e324a5f3fdce --build-arg REACT_APP_DYTE_APIKEY=a9776634bc04e1573d26 --build-arg REACT_APP_COGNITION_API_KEY_LABEL=unberry-api-key --build-arg REACT_APP_COGNITION_URL=https://prod-api.unberry.com/api/integration/v1 --build-arg REACT_APP_CHALLENGE_URL=/challenge --build-arg REACT_APP_CHALLENGE_TRAIT_URL=/challenge/trait --build-arg REACT_APP_COGNITION_API_KEY=p-NTMNbjxzcTOZds3kxz4thrTYtLf2MqEu0IcswlRAdss= --build-arg REACT_APP_NEW_HEIMDALL_BASELINING_URL=http://stage.valuematrix.ai/heimdall/api --build-arg REACT_APP_DS_CLIENT_ID=Vk1fUExBVEZPUk1fREVW --build-arg REACT_APP_DS_CLIENT_SECRET=Vk1fUExBVEZPUk1fREVWX1NFQ1JFVA== --build-arg REACT_APP_HEIMDALL_BASE_URL=http://stage.valuematrix.ai --build-arg REACT_APP_SHARE_REPORT_URL=http://stage.valuematrix.ai/reports
+         echo Pushing the Docker image...
+         docker push $IMAGE_REPO_NAME:${GITHUB_REF##*/}.$GITHUB_RUN_NUMBER
+         echo Pushed the Docker Image $IMAGE_REPO_NAME:${GITHUB_REF##*/}.$GITHUB_RUN_NUMBER  Successfully...
+  DeployInDevelop:
+    needs: BuildDockerImage
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy Application In Development Environment
+      if: github.ref == 'refs/heads/staging'
+      run: |
+         git config --global user.name VM.User
+         git config --global user.email devops@valuematrix.ai
+         mkdir DevOps
+         cd DevOps
+         git clone https://$DEPLOY_USER:$DEPLOY_PASS@github.com/ValueMatrix/devops.git
+         cd devops
+         git checkout main
+         cd vm-stage/platform/
+         sed -i "s|valuematrix/vm-frontend:.*|valuematrix/vm-frontend:${GITHUB_REF##*/}.${GITHUB_RUN_NUMBER}|" docker-compose.yml
+         #cd vm-stage/frontend/
+         #sed -i 's/^  tag':' .*$/  tag':'\ "'${GITHUB_REF##*/}.$GITHUB_RUN_NUMBER'"/' values.yaml
+         git stash
+         git pull https://$DEPLOY_USER:$DEPLOY_PASS@github.com/ValueMatrix/devops.git
+         git stash pop
+         git commit -a -m "Backend Docker Image Tag Updated to '${GITHUB_REF##*/}.$GITHUB_RUN_NUMBER'"
+         git push https://$DEPLOY_USER:$DEPLOY_PASS@github.com/ValueMatrix/devops.git
+         echo Updated Docker-compose file...
+
+    - name: Setup SSH and Deploy to EC2
+      run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 13.232.0.27 >> ~/.ssh/known_hosts
+          ssh -o StrictHostKeyChecking=no ec2-user@13.232.0.27 "
+            echo 'Pulling latest compose file from GitHub...'
+            cd /home/ec2-user/devops && \
+            git fetch origin && \
+            git reset --hard origin/main && \
+            echo 'Deploying updated docker-compose....' && \
+            cd vm-stage/platform && \
+            docker-compose pull frontend && \
+            docker-compose up -d frontend
+          "

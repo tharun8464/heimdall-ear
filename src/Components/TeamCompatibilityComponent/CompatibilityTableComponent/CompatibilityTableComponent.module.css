@@ -1,0 +1,99 @@
+.TopContainer {
+  display: flex;
+  /* width: 584px; */
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 14px 14px 0px 0px;
+  border-top: 1px solid var(--grey-e-3-e-3-e-3, #e3e3e3);
+  border-right: 1px solid var(--grey-e-3-e-3-e-3, #e3e3e3);
+  border-left: 1px solid var(--grey-e-3-e-3-e-3, #e3e3e3);
+  background: #fff;
+  margin: auto;
+}
+
+.MiddleContainer {
+  display: flex;
+  /* width: 584px; */
+  padding: 10px 20px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  border: 1px solid var(--neutrals-stroke, #e3e3e3);
+  background: #fafafa;
+}
+
+.TextBox {
+  padding: 6px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 5px;
+  background: rgba(34, 130, 118, 0.1);
+}
+
+.TextBox > p {
+  color: var(--tags-green-100, #228276);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 510;
+  line-height: normal;
+}
+
+.Common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h6 {
+  color: var(--typography-100, #333);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Indicator {
+  position: absolute;
+  top: -13px;
+  right: 20px;
+}
+.IndicatorCont {
+  width: 325px;
+  border-radius: 13px;  
+  /* background: #fafafa; */
+  background: white;
+}
+.MatchIndicatorWrapper {
+  position: relative;
+}
+
+.BtnStyle {
+  color: #228276;
+  font-size: 12px;
+  font-weight: 510;
+  display: flex;  
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #228276;
+  background: rgba(1, 39, 35, 0.1);
+}
+
+.BtnStyleNotSelected {
+  color:  rgba(51, 51, 51, 0.50);
+  font-size: 12px;
+  font-weight: 510;
+  display: flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px #E3E3E3 solid;
+}

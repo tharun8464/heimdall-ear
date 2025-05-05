@@ -1,0 +1,88 @@
+.Wrapper {
+  display: flex;
+  border-radius: 14px;
+  flex-direction: column;
+  background-color: white;
+  gap: 1rem;
+
+  width: 800px;
+  min-height: 211px;
+  border-radius: 14px;
+
+  padding: 1rem;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+.Heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+.SubHeading {
+  font-weight: 600;
+  font-size: 14px;
+}
+.InputWrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.SelectWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Select {
+  height: 2.7rem;
+  width: 15rem;
+}
+.BtnWrapper {
+  display: flex;
+  justify-self: flex-end;
+  margin-left: auto;
+
+  gap: 1rem;
+}
+.RadioWrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.RadioInputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+label {
+  margin-bottom: 0;
+}
+.LanguageInput {
+  width: 30rem !important;
+}
+.MobileWrapper {
+  width: 20rem;
+  display: flex;
+  border-radius: 14px;
+  flex-direction: column;
+  background-color: white;
+  gap: 1rem;
+
+  min-height: 211px;
+  max-height: 80vh;
+  border-radius: 14px;
+
+  padding: 1.5rem 1rem;
+  overflow: scroll;
+}
+@media (max-width: 650px) {
+  .InputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .RadioWrapper {
+    gap: 1.5rem;
+  }
+}

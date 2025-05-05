@@ -1,0 +1,43 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 14px;
+  width: 680px;
+}
+.InputWrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.Heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+.SubHeading {
+  font-size: 14px;
+  font-weight: 500;
+}
+.SubHeadingSetProfileForm {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-Top: 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .CountryCodeWrapper {
+    width: 100% !important;
+  }
+  .CountryCodeSelect {
+    width: 100% !important;
+  }
+  .Wrapper {
+    width: 100%;
+    border: 1px solid var(--border-grey);
+    margin-top: 11rem;
+  }
+}

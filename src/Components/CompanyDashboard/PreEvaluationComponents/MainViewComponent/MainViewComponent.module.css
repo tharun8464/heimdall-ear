@@ -1,0 +1,382 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2rem; */
+
+  border: Mixed solid #e3e3e3;
+  position: relative;
+  border-radius: 14px;
+}
+.tableWrapper { 
+  width: 100%;
+  overflow: scroll;
+}
+.TableHeadingWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+.Table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.Table td {
+  padding: 0.8rem 0;
+  position: relative;
+  border-right: 1px solid var(--border-grey);
+}
+.Table tr {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-grey);
+}
+.TableHeadingRow {
+  background-color: var(--ter-background-grey) !important;
+  border-top: 1px solid var(--border-grey);
+}
+.TableHeadingCell {
+  padding: 0.6rem 0.3rem !important;
+}
+.TextAlignRight {
+  text-align: right;
+}
+.TextAlignLeft {
+  text-align: left;
+}
+.TextAlignCenter {
+  text-align: center;
+}
+.TalentMatchCell {
+  background-color: var(--primary-light-green);
+}
+.TalentMatchHeadingCell {
+  background-color: var(--primary-green);
+  color: var(--white) !important;
+}
+.TalentMatchHeadingCell span {
+  color: var(--white) !important;
+ 
+}
+.FontColorWhite {
+  color: var(--white);
+}
+.TableHeadingWrapper {
+  padding-left: 0.8rem;
+}
+.TableHeadingText {
+  width: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--font-grey-75);
+}
+.TableHeadingIcon{
+  padding-left: 3rem;
+  padding-top: 0.6rem;
+}
+.UserInfoCell {
+  width: 320px;
+  padding: 0.8rem 0.5rem !important;
+}
+.userDPandInfoWrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.SourceCell {
+  width: 200px;
+}
+.TechRatingCell {
+  width: 150px;
+}
+.FontWeight600 {
+  font-weight: 600;
+}
+.ViewInterviewStatusWrapper {
+  /* background-color: var(--sec-background-grey); */
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+  /* cursor: pointer; */
+}
+.ViewInterviewStatus {
+  color: var(--primary-green);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.MatchText {
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 400;
+  padding: 8px;
+}
+
+.Overlay {
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.Circle {
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-green);
+  position: relative;
+}
+.UserDp {
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+.Circle img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.Lines > li {
+  height: 3px;
+  width: 52px;
+  position: absolute;
+  left: -3px;
+  top: calc(50% - 2px);
+}
+
+.Lines > li:nth-child(1) {
+  transform: rotate(90deg);
+}
+.Lines > li:nth-child(2) {
+  transform: rotate(-150deg);
+}
+.Lines > li:nth-child(3) {
+  transform: rotate(-30deg);
+}
+
+/* .lines > li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.5px;
+  height: 100%;
+  background: #fff; 
+} */
+.TeamTable {
+  width: 100%;
+}
+.Lines > li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: #fff;
+}
+.Lines > li:after {
+  left: 0;
+}
+.PullBtn {
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+  margin: auto;
+}
+
+.NodataText {
+  color: var(--red-error);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+}
+.InvitedText {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--font-grey-50);
+}
+.NameText {
+  font-weight: 600;
+}
+.SectionWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #e3e3e3;
+  border-radius: 14px;
+}
+.RightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-left: 1px solid var(--border-grey);
+}
+.AddingMethodContentWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.SelectPopoverButton {
+  border: 1px solid var(--border-grey);
+  padding: 0.2rem 1rem;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+}
+.SelectPopoverButton:focus {
+  outline: 0px;
+}
+
+.CandidateImg {
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.Wrapper td {
+  border: 1px solid var(--border-grey);
+  padding: 0.6rem 1.7rem;
+}
+.AddCustomTagPopoverWrapper {
+  position: relative;
+}
+.AddCustomTagPopover {
+  position: absolute;
+  border: 2px solid var(--border-grey);
+  left: -250px;
+  border-radius: 14px;
+  padding: 1rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.Popover {
+  display: flex;
+  justify-content: flex-end;
+}
+.Options {
+  padding: 6px 10px;
+}
+.SelectPopoverPanel {
+  position: absolute;
+
+  background-color: var(--white);
+
+  border-radius: 10px;
+  border: 1px solid var(--border-grey);
+  padding: 0.1rem;
+  width: 122px;
+
+  /* Card */
+  box-shadow: var(--primary-box-shadow);
+  z-index: 99;
+}
+.SelectedClass {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.OnSelectMenu {
+  border-radius: 14px;
+  border: 1px solid var(--neutrals-stroke, var(--border-grey));
+  background: #fff;
+
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  width: 11rem;
+}
+.OnSelectMenuWrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.PopoverBtnClass {
+  /* background-color: red; */
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.CursorPointer {
+  cursor: pointer;
+}
+.BtnWrapper {
+  display: flex;
+  gap: 0.6rem;
+}
+.EnterTagText {
+  color: var(--black);
+  font-size: 14px;
+  margin-right: auto;
+}
+.SourceText {
+  font-size: 12px;
+}
+.inputIcons i {
+  position: absolute;
+  margin-right: 10px;
+}
+.DashboardMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-top-left-radius: 24px;
+}
+.inputIcons {
+  position: relative;
+  /* width: 100%; */
+}
+.SearchBarInput {
+  width: 100%;
+}
+.icon {
+  padding: 10px;
+  color: rgb(171, 168, 168);
+  min-width: 50px;
+  text-align: center;
+}
+.SearchWrapper {
+  display: flex;
+  gap: 1rem;
+}
+.CandidateHeadingWrapper {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+.CandidateHeading {
+  font-size: 14px;
+  font-weight: 500;
+}
+.Dot {
+  color: var(--font-grey-50);
+  margin-bottom: 0.4rem;
+}
+.CandidateNumber {
+  color: var(--font-grey-50);
+  font-size: 14px;
+  font-weight: 500;
+}
+.InterviewStatusWrapper {
+  background-color: var(--sec-background-grey);
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.InterviewStatus {
+  color: var(--primary-green);
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.HeadingRow {
+  background: #fafafa;
+}
+.highlightedrow {
+  background-color: var(--primary-green) !important;
+
+}

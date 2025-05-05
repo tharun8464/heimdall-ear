@@ -1,0 +1,38 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-bottom: var(--border-grey);
+}
+.ProgressWrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.ChipsWrapper {
+  display: flex;
+  gap: 0.6rem;
+}
+.NodataText {
+  color: var(--red-error);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+}
+.PercentageWrapper {
+  color: var(--font-grey-50);
+  font-size: 14px;
+  display: inline-grid;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+  gap: 1rem;
+}
+.ChipsClass {
+  font-weight: 600;
+  background-color: var(--font-grey-05);
+  padding: 0.5rem 0.8rem;
+  border-radius: 12px;
+  text-align: center;
+}
+.Divider {
+  margin-top: 0.6rem;
+}

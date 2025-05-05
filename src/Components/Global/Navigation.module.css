@@ -1,0 +1,273 @@
+/* Wrapper for the entire navigation component */
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 20px;
+  height: calc(100vh - 64px);
+  background: #fff;
+  padding-right: 1rem;
+  border-right: 1px solid #e6e6e6;
+  overflow-y: scroll;
+}
+
+/* Styles for expanded and collapsed states */
+.Expanded {
+  /* width: 300px; */
+  flex: 0 0 20%;
+}
+
+.Collapsed {
+  /* width: 90px; */
+  flex: 0 0 7%;
+}
+
+.Collapsed .MenuWrapper {
+  position: relative;
+}
+
+.Collapsed .MenuWrapper .counts,
+.Collapsed .MenuWrapper .locked,
+.Collapsed .MenuWrapper .arrowUp,
+.Collapsed .MenuWrapper .arrowDown {
+  position: absolute;
+  top: -4px;
+  right: -10px;
+}
+
+/* Styles for the button group */
+.navigationButton {
+  display: flex;
+}
+
+.Collapsed .navigationButton {
+  border: 3px solid #1C6C62;
+  border-radius: 12px;
+}
+
+.navigationButton button {
+  width: 50%;
+  color: #1C6C62;
+  padding: 0.6rem 1rem;
+  background-color: #F4F7F8;
+  font-weight: 600;
+  border: 0;
+}
+
+.navigationButton button:first-child {
+  border-radius: 8px 0px 0 8px;
+}
+
+.navigationButton button:last-child {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.navigationButton button:focus,
+.navigationButton button:hover {
+  outline: 0;
+  box-shadow: none;
+}
+
+.navigationButton button:active {
+  background-color: #1C6C62 !important;
+  color: #F4F7F8 !important;
+  box-shadow: none !important;
+}
+
+.navigationButton button:hover {
+  color: #ffffff;
+  background-color: #1C6C62;
+}
+
+.navigationButton .ButtonGroupActive {
+  background-color: #1C6C62;
+  color: #ffffff;
+}
+
+.Collapsed .navigationButton button {
+  padding: 10px 5px;
+}
+
+/* Styles for the post job button */
+.PostJobBtn {
+  background-color: var(--primary-green);
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+/* Styles for the navigation items */
+.navItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Styles for individual menu items */
+.MenuWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #5E5E5E;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+}
+
+.MenuWrapper:hover,
+.MenuWrapper:focus {
+  background-color: rgba(34, 130, 118, 0.1);
+  border: 1px solid #1C6C62;
+  color: #1C6C62;
+  outline: 0;
+}
+
+.MenuWrapper.Active {
+  background-color: rgba(34, 130, 118, 0.1);
+  border: 1px solid #1C6C62;
+  color: #1C6C62;
+}
+
+.MenuWrapper.Active .Text {
+  color: #1C6C62;
+}
+
+.MenuWrapper.Active i {
+  color: #1C6C62;
+}
+
+.MenuWrapper.Active svg {
+  color: #1C6C62;
+}
+
+.Collapsed .MenuWrapper {
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Styles for text inside menu items */
+.Text {
+  font-size: 16px;
+  color: #5E5E5E;
+  margin-left: 0.5rem;
+}
+
+/* Styles for counts inside menu items */
+.counts {
+  background-color: #1C6C62;
+  color: #fff;
+  font-size: 12px;
+  padding: 0.213rem 0.41rem;
+  border-radius: 9.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+  min-width: 26px;
+  max-width: 35px;
+}
+
+/* Styles for locked button inside menu items */
+.locked {
+  color: #fff;
+  font-size: 12px;
+  padding: 0;
+  border-radius: 9.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+}
+
+/* Styles for the top area of the navigation */
+.navTopArea {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dropdownWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 8px;
+  color: #5E5E5E;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  flex-direction: column;
+}
+
+.dropdownContent {
+  width: 100%;
+}
+
+.dropdownWrapper button.MenuWrapper,
+.dropdownContent button {
+  border: 0;
+  background-color: none;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+  .Wrapper {
+    width: 80%;
+    position: absolute;
+    z-index: 9999;
+    overflow-y: scroll;
+    border-bottom: 1px solid var(--border-grey);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebarOpen {
+    transform: translateX(0);
+  }
+
+  .sidebarClose {
+    transform: translateX(-100%);
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .Wrapper.sidebarOpen {
+    animation: slideIn 0.3s forwards;
+  }
+
+  .Wrapper.sidebarClose {
+    animation: slideOut 0.3s forwards;
+  }
+
+  .Collapsed .MenuWrapper .locked {
+    background-color: #fff;
+  }
+}

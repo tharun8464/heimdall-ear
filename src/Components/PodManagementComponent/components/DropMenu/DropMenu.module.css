@@ -1,0 +1,153 @@
+.menuContainer {
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid var(--border-grey);
+  top: 3rem;
+  right: 3rem;
+  z-index: 5;
+}
+
+.menu {
+  padding: 8px 5px;
+  font-size: 14px;
+}
+
+.menu ul li {
+  padding: 3px 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  font-weight: 300;
+}
+
+.dropdownItem {
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.dropdownItem:hover {
+  background-color: rgb(60, 136, 122);
+  color: #fff;
+  .weightage, .weightageN, .weightageR {
+    background-color: white;
+    color: black;
+  }
+}
+
+.menuContainer div:last-child button {
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.menuContainer div:last-child p {
+  color: rgb(60, 136, 122);
+  font-weight: 500;
+  padding-left: 15px;
+  padding-right: 30px;
+}
+
+.menuContainer div:last-child p:hover {
+  background-color: rgb(60, 136, 122);
+  color: #fff;
+  border-radius: 8px;
+}
+
+.menuContainer div:last-child svg:hover {
+  color: #fff;
+}
+
+.fullWidth {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 35px;
+  margin: 10px 12px;
+}
+
+.tagMenuContainer {
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid var(--border-grey);
+  right: 13rem;
+  top: 8rem;
+  z-index: 10;
+}
+
+.btnStyle {
+  padding: 3px 10px;
+  background-color: rgb(242, 247, 246);
+  color: rgb(60, 136, 122);
+  border: 1px solid rgb(60, 136, 122);
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.buttonContainer {
+  margin: 10px 12px;
+  justify-content: start;
+  gap: 5px;
+}
+
+.buttonContainer button:hover {
+  padding: 3px 10px;
+  background-color: rgb(60, 136, 122);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.weightage {
+  position: absolute;
+  margin-top: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(60, 136, 122);
+  padding: 5 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 15px;
+  border-radius: 5px;
+  right: 1rem;
+}
+
+.weightageN, .weightageR {
+  position: absolute;
+  margin-top: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  background-color: darkred;
+  padding: 5 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 15px;
+  border-radius: 5px;
+  right: 1rem;
+}

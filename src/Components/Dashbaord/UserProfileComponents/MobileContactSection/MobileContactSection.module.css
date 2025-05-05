@@ -1,0 +1,11 @@
+.MobileVersion {
+  padding: 1rem;
+}
+.ContactSection {
+  border: 1px solid var(--font-grey-10);
+}
+@media screen and (max-width: 650px) {
+  .ContactSection {
+    margin-top: 11rem;
+  }
+}

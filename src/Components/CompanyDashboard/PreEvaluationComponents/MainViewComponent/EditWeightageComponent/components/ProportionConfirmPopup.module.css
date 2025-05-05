@@ -1,0 +1,60 @@
+.Wrapper {
+  position: absolute;
+  right: 450px;
+  top: 400px;
+  /* border-top: 5px solid var(--primary-green); */
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+  z-index: 9;
+  /* padding: 2rem; */
+ 
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.HeadingWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.Heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+.Subheading {
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 1rem;
+  padding-right: 1rem;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+}
+
+.ProportionBtn{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;  
+}
+
+.CancelProp {  
+  color: rgb(124, 113, 111);
+  border: 1px solid #b3b3b3; 
+
+  width: 150px;
+}
+
+.ContinuePropBtn {
+  background-color: rgb(60, 136, 122);
+
+  width: 150px;
+}
+

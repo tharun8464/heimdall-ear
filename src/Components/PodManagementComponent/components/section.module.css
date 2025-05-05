@@ -1,0 +1,290 @@
+.LinkedInOrEmailWrapper {
+  background-color: var(--pent-background-grey);
+}
+/* left */
+.LeftSectionWrapper {
+  background-color: var(--white);
+  height: 100%;
+  padding: 1rem 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+}
+.AddMemberHeading {
+  font-weight: 500;
+  font-size: 14px;
+}
+.CustomInputClass {
+  color: var(--font-grey-50);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+/*  */
+.RemoveMembers {
+  border: 1px dashed var(--primary-green);
+  border-radius: 14px;
+  margin: 0 1rem;
+  padding: 3rem 1rem;
+  background-color: var(--background-grey);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+}
+.RemoveMemberText {
+  text-align: center;
+  color: var(--font-grey-50);
+}
+/* middle */
+.MiddleSectionWrapper {
+  background-color: var(--white);
+  height: 100%;
+  position: relative;
+}
+
+.MemberHeader {
+  padding: 1rem;
+}
+.AddTagText {
+  color: var(--font-grey-75);
+  font-weight: 500;
+}
+.fullWidth {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.MemberHeading {
+  font-weight: 600;
+  font-size: 16px;
+}
+.filterBox {
+  margin-top: 5px;
+  padding: 10px 18px;
+  background-color: var(--sec-background-grey);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-grey);
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.filter {
+  padding: 3px 15px;
+  border: 1px solid #cecece;
+  border-radius: 18px;
+  color: #a5a1a1;
+  font-size: 12px;
+  background-color: #f7f5f5;
+}
+
+.newFilter {
+  padding: 3px 15px;
+  background-color: rgb(202, 227, 222);
+  color: rgb(60, 136, 122);
+  border: 1px solid rgb(60, 136, 122);
+  font-size: 12px;
+  border-radius: 18px;
+}
+.newFilter:focus {
+  outline: 0;
+}
+/* move to pod popup */
+.podOptionCont {
+  z-index: 10;
+  position: absolute;
+
+  top: 130px;
+  left: 388px;
+  background-color: rgb(60, 136, 122);
+  position: absolute;
+  padding: 8px;
+  border-radius: 10px;
+  gap: 8px;
+}
+
+.podOptionItemCont {
+  padding: 4px 10px;
+  border-radius: 6px;
+  background-color: white;
+  justify-content: space-between;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.podOptionItemCont div:first-child {
+  color: rgb(60, 136, 122);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.deleteIcon {
+  padding: 8px;
+  background-color: rgb(107, 167, 156);
+  border-radius: 8px;
+  font-size: 13px;
+  color: white;
+}
+
+.arrowIcon {
+  border-radius: 8px;
+  font-size: 15px;
+  color: rgb(60, 136, 122);
+}
+/* ======= */
+.common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.inputIcons i {
+  position: absolute;
+}
+
+.inputIcons {
+  position: relative;
+  width: 100%;
+  /* margin-bottom: 10px; */
+}
+
+.icon {
+  padding: 10px;
+  color: rgb(171, 168, 168);
+  min-width: 50px;
+  top: 4px;
+  text-align: center;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  padding-left: 3rem;
+  background-color: var(--pent-background-grey);
+  border: 2px solid var(--background-grey);
+  font-weight: 600;
+  color: var(--font-grey-50);
+}
+
+.inputCont {
+  position: relative;
+}
+
+.recommendedText {
+  position: absolute;
+  text-align: center;
+  font-size: 10px;
+  background-color: rgb(202, 227, 222);
+  color: rgb(60, 136, 122);
+  right: 12px;
+  padding: 2px 0.3rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+/* members */
+/* member card wrapper */
+.wrapper {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border: none;
+}
+.checkbox {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: var(--primary-green);
+}
+.checkbox:focus {
+  outline: 0px;
+}
+.textInfo p {
+  font-size: 14px;
+}
+.textInfo h3 {
+  font-size: 14px;
+  color: grey;
+}
+
+.imageContainer {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sideContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+/* dropmenu */
+.dropMenuContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border: 2px solid var(--border-grey);
+  border-radius: 8px;
+  padding: 1px 8px;
+  cursor: default;
+}
+
+.dropMenuContainer div p {
+  font-size: 13px;
+}
+
+.dropMenuContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border: 2px solid var(--border-grey);
+  border-radius: 8px;
+  padding: 1px 8px;
+}
+
+.dropMenuContainer div p {
+  font-size: 13px;
+}
+
+.gripIcon {
+  font-size: 15px;
+  color: #969595;
+}
+.Common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px #00000014;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.Common > p {
+  color: var(--primary-100, #228276);
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 590;
+  line-height: 16px;
+}
+

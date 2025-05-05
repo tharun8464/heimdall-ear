@@ -1,0 +1,41 @@
+.Wrapper {
+  padding: 1rem;
+  border: 2px solid var(--primary-green);
+  border-radius: 14px;
+  width: 14rem;
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+  font-weight: 500;
+}
+.LogoWrapper {
+  display: flex;
+  gap: 0rem;
+  align-items: center;
+}
+.Logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.Title {
+  font-size: 14px;
+}
+/* .ProgressBar {
+  border: 1px solid var(--border-grey);
+  padding: 0.2rem;
+  background-color: red;
+}
+.BarContainerClassName {
+  background-color: var(--border-grey);
+  border: 1px solid grey;
+  border-radius: 14px;
+}
+.CompletedBar {
+  background-color: var(--primary-green);
+  /* width: 80%; */
+.Percentage {
+  font-size: 14px;
+}

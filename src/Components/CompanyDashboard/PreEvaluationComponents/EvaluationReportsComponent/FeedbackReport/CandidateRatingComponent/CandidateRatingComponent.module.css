@@ -1,0 +1,28 @@
+.Wrapper {
+  background-color: var(--primary-green);
+  box-shadow: var(--primary-box-shadow);
+  border-radius: 14px;
+  padding: 0.4rem 1rem;
+  display: flex;
+  gap: 0.6rem 1rem;
+  color: var(--white);
+  border-right: 1px solid rgba(51, 51, 51, 0.25);
+  justify-content: center;
+}
+.RatingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.NumbersWrapper {
+  font-size: 24px;
+  font-weight: 600;
+}
+.Denominator {
+  color: var(--font-light-grey);
+}
+.Text {
+  font-size: 14px;
+  color: var(--font-light-grey-85);
+}

@@ -1,0 +1,288 @@
+.Wrapper {
+  position: absolute;
+  right: 0;
+  top: 58px;
+  border-top: 5px solid var(--primary-green);
+  background: #fff;
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+  z-index: 9;
+  /* padding: 2rem; */
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  height: 100vh;
+}
+
+.HeadingWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.Heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1rem;
+}
+
+.NameWrapper {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.BtnClass {
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+}
+
+.BtnWrapper,
+.BottomBtnsWrapper {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.ResetBtnCLass {
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  border: 1px solid var(--red-error);
+  color: var(--red-error) !important;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--background-grey);
+  align-items: center;
+  border-top: 1px solid var(--border-grey);
+  border-bottom: 1px solid var(--border-grey);
+  padding: 0 1rem;
+}
+
+.BottomBtnsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding: 0 1rem;
+  border-top: 1px solid var(--border-grey);
+  width: 100%;
+  padding-top: 0.6rem;
+}
+
+.NameListWrapper {
+  padding: 0 1rem;
+}
+
+.Input {
+  width: 100% !important;
+}
+
+.PreDefinedWeightageWrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.WeightageWrapper {
+  display: flex;
+  gap: 0.6rem;
+  border-radius: 12px;
+  padding: 22px;
+  /* background-color: var(--light-green-success); */
+  width: 360px;
+  cursor: pointer;
+}
+
+.WeightageSelectedBtn {
+  border-radius: 8px;
+  color: var(--primary-green);
+  background: white;
+  width: 100%;
+}
+
+.WeightageBtn {
+  border-radius: 8px;
+  color: var(--primary-green);
+  background: var(--sec-light-green);
+  /* width: 100%; */
+}
+
+.WeightageIcon{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -5px;  
+}
+.WeightageInput {
+  height: 28%;
+  padding: 1rem .5rem 1rem .5rem;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+  font-size: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ProportionBtn{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;  
+}
+
+.InputContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 25%;
+  margin-left: 5px;  */
+}
+
+.CustomizeWrapper {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ViewSavedWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CustomizeWeightageBtnWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 15px;
+  width: 360px;
+  gap: 0.6rem;
+}
+
+.CustomizeWeight{
+  gap: 0.2rem;
+  border-radius: 12px; 
+  padding-top: 15px;
+  padding-bottom: 15px; 
+  /* background-color: var(--light-green-success); */
+  background-color: rgb(60, 136, 122);
+  width: 360px;
+  cursor: pointer;
+}
+
+.SaveProportionBtn {
+  background-color: var(--primary-green);
+  padding: 0.2rem 0.9rem;
+}
+
+.SavePropBtn {
+  background-color: rgb(60, 136, 122);
+  padding: 0.2rem 0.9rem;
+}
+
+
+.SveProp {
+  background-color: #b3b3b3;
+  padding: 0.2rem 0.9rem;
+}
+
+.DeleteWeightageBtn {
+  background-color: rgb(241, 216, 211);
+  padding: 0.2rem 0.9rem;
+  color: rgb(243, 99, 70);
+}
+
+
+.DelWeight {
+  background-color: #b3b3b3;
+  padding: 0.2rem 0.9rem;
+}
+
+.Subheading {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.WeightageTitle {
+  margin: 0.6rem auto 0 auto;
+  width: fit-content;
+}
+
+.Viewsaved {
+  color: var(--primary-green);
+  cursor: pointer;
+}
+
+.Percent {
+  position: absolute;
+  right: 6px;
+  font-size: 12px;
+}
+
+.SelectPopoverButton {
+  padding: 0.2rem 1rem;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.SelectPopoverButton:focus {
+  outline: 0px;
+}
+
+.SelectedClass {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.Options {
+  padding: 6px 10px;
+}
+
+.CursorPointer {
+  cursor: pointer;
+}
+
+.CursorPointer:hover { 
+  background-color: #E9F3F1;
+  color: #228276;
+  border-radius: 5px;
+}
+
+.SelectPopoverPanel {
+  position: absolute;
+  z-index: 999;
+  background-color: var(--white);
+
+  border-radius: 10px;
+  border: 1px solid var(--border-grey);
+  padding: 0.1rem;
+  width: 122px;  
+  box-shadow: var(--primary-box-shadow);
+}
+
+.tagMenuContainer {
+  position: absolute;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid var(--border-grey);
+  z-index: 100;
+}
+.enterProportion {
+  font-weight: 500;
+}

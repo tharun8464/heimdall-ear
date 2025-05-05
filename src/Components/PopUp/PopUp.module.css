@@ -1,0 +1,38 @@
+.WrapperWrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  transition: background 0.3s ease-in-out;
+}
+.Wrapper {
+  height: 100vh;
+  min-height: 100%;
+  width: fit-content;
+  position: fixed;
+  right: 0px;
+  background-color: white;
+  z-index: 5;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  transition: transform 0.3s ease-out;
+}
+.CloseIcon {
+  position: absolute;
+  right: -4px;
+  top: 1rem;
+  cursor: pointer;
+  color: var(--primary-grey);
+}
+.Wrapper::-webkit-scrollbar {
+  width: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .Wrapper {
+    /* width: 100%; */
+    /* max-width: 26rem; */
+  }
+}

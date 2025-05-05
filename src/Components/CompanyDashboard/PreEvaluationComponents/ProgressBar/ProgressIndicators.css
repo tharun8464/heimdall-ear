@@ -1,0 +1,15 @@
+.progressIndicators {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .progressIndicator {
+    text-align: center;
+    width: 100px; /* Adjust the width as needed */
+  }
+  
+  .progressIndicator span {
+    display: block;
+  }
+  

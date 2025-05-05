@@ -1,0 +1,108 @@
+.OtherPod {
+  border-radius: 14px;
+  background-color: var(--font-grey-05);
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0.6rem 1rem;
+}
+.Name {
+  font-size: 14px;
+}
+.AddEmployees {
+  color: var(--primary-green);
+  font-size: 14px;
+  font-weight: 600;
+}
+.PodsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  padding: 1rem 0;
+}
+.AddedPod {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  background-color: var(--font-grey-05);
+  border-radius: 14px;
+  padding: 0.6rem 1rem;
+}
+.ImageWrapper {
+  display: flex;
+  position: relative;
+  width: 5rem;
+  background-color: red;
+}
+.Img {
+  width: 1.6rem;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+}
+.Img:nth-child(1) {
+  right: 10px;
+}
+.Img:nth-child(2) {
+  right: 20px;
+}
+.Img:nth-child(3) {
+  right: 30px;
+}
+.Img:nth-child(4) {
+  right: 40px;
+}
+.VertIcon {
+  position: absolute;
+  right: -1rem;
+  color: var(--font-grey-75);
+}
+.NamesWrapper {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+.CustomNameWrapper {
+  border: 1px solid var(--border-grey);
+  border-radius: 8px;
+  padding: 0 0.6rem;
+}
+.Name {
+  font-size: 14px;
+}
+.CustomName {
+  color: var(--font-grey-75);
+  font-size: 14px;
+}
+
+.Popover {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.OnSelectMenu {
+  border-radius: 14px;
+  border: 1px solid var(--neutrals-stroke, var(--border-grey));
+  background: #fff;
+
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  width: 11rem;
+}
+.OnSelectMenuWrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.PopoverBtnClass {
+  /* background-color: red; */
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+
+.CursorPointer {
+  cursor: pointer;
+}

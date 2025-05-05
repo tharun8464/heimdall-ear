@@ -1,0 +1,282 @@
+.InfoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.TeamDynamics {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.OnSelectMenu {
+  border-radius: 14px;
+  border: 1px solid var(--neutrals-stroke, var(--border-grey));
+  background: #fff;
+
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  width: 11rem;
+}
+
+.Lines > li {
+  height: 3px;
+  width: 52px;
+  position: absolute;
+  left: -3px;
+  top: calc(50% - 2px);
+}
+
+.Lines > li:nth-child(1) {
+  transform: rotate(90deg);
+}
+.Lines > li:nth-child(2) {
+  transform: rotate(-150deg);
+}
+.Lines > li:nth-child(3) {
+  transform: rotate(-30deg);
+}
+
+/* .lines > li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.5px;
+  height: 100%;
+  background: #fff; 
+} */
+
+.Lines > li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: #fff;
+}
+.Lines > li:after {
+  left: 0;
+}
+
+.Circle {
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-green);
+  position: relative;
+}
+.Circle .OnSelectMenuWrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.PopoverBtnClass {
+  /* background-color: red; */
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.RemovePopoverBtnClass {
+  background-color: var(--light-red-error);
+  color: var(--red-error);
+}
+.MatchChipCell {
+  /* display: flex; */
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.6rem 0;
+  margin-top: 0.8rem;
+}
+.MatchChip {
+  height: 1.8rem;
+  padding: 0 1rem !important;
+  align-items: center;
+}
+.ChipAndSourceWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+.GreyText {
+  color: var(--font-grey-25);
+}
+.DarkGreyText {
+  color: var(--font-grey-75);
+}
+.SourceAdded {
+  justify-self: flex-end;
+  margin-left: auto;
+  margin-right: 6px;
+  font-size: 10px;
+}
+.ChipsWrapper {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.2rem;
+}
+.ChipsCustomClass {
+  height: 20px !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  color: var(--font-grey-sec) !important;
+}
+.Popover {
+  display: flex;
+  justify-content: flex-end;
+}
+.SelectPopoverPanel {
+  position: absolute;
+
+  background-color: var(--white);
+
+  border-radius: 10px;
+  border: 1px solid var(--border-grey);
+  padding: 0.1rem;
+  width: 122px;
+
+  /* Card */
+  box-shadow: var(--primary-box-shadow);
+}
+.SelectedClass {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-radius: 5px;
+}
+.Options {
+  padding: 6px 10px;
+}
+.AddingMethodContentWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.SelectPopoverButton {
+  border: 1px solid var(--border-grey);
+  padding: 0.2rem 1rem;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black);
+}
+.SelectPopoverButton:focus {
+  outline: 0px;
+}
+
+.CandidateImg {
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+.Wrapper td {
+  border-bottom: 1px solid var(--border-grey);
+}
+.Wrapper {
+  cursor: pointer;
+}
+.AddCustomTagPopoverWrapper {
+  position: relative;
+}
+.AddCustomTagPopover {
+  position: absolute;
+  border: 2px solid var(--border-grey);
+  left: -250px;
+  border-radius: 14px;
+  padding: 1rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.Circle {
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-green);
+  position: relative;
+}
+.UserDp {
+  padding: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+.Circle img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.TalentMatchWrapper {
+  margin-left: 4rem;
+
+  width: fit-content;
+}
+.TextAlignCenter {
+  text-align: center;
+}
+.EnterTagText {
+  color: var(--black);
+  font-size: 14px;
+  margin-right: auto;
+}
+.BtnWrapper {
+  display: flex;
+  gap: 0.6rem;
+}
+.CursorPointer {
+  cursor: pointer;
+}
+
+.DashboardMenu {
+  padding: 1rem;
+  width: 100%;
+}
+.MenuWrapper {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  width: 100%;
+  padding-left: 0.9rem;
+}
+.FilterImg {
+  margin-left: auto;
+  cursor: pointer;
+}
+.SearchBar {
+  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+}
+.Wrapper th {
+  padding: 1rem 0;
+  padding-left: 1rem;
+  border: 1px solid var(--border-grey);
+}
+.HeadingText {
+  width: 74px;
+}
+
+.SectionWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #e3e3e3;
+  border-radius: 14px;
+}
+
+.InterviewStatusWrapper {
+  background-color: var(--sec-background-grey);
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.InterviewStatus {
+  color: var(--primary-green);
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.HighlightedCandidate {
+  background: var(--highlight-green);
+}

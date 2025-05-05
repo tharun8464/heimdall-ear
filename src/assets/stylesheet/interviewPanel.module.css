@@ -1,0 +1,31 @@
+.Wrapper {
+  height: 95vh;
+}
+.DemoImage {
+  width: 48.75rem;
+  border-radius: 21px;
+}
+.Sidebar {
+  width: 30rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.VideoWrapper {
+  border-radius: 14px;
+  background: #fafafa;
+  width: 19rem;
+  height: 18rem;
+  flex-shrink: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 2rem;
+}
+.Video {
+  height: 241px;
+  border-radius: 14px;
+}

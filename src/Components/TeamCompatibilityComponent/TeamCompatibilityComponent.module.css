@@ -1,0 +1,131 @@
+.Wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.SectionWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #E3E3E3;
+  border-radius: 14px
+}
+
+.MenuCustomClass {
+  border-top-right-radius: 0px !important;
+}
+.ManagePodsWrapper {
+  background-color: var(--sec-background-grey);
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.ManagePods {
+  color: var(--primary-green);
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.RowCustomClass td {
+  border: 0px !important;
+  border-bottom: 1px solid var(--border-grey);
+  background-color: var(--white);
+  padding: 0.6rem;
+}
+.CandidateDetailsWrapper {
+  height: 70vh;
+  overflow-y: scroll;
+}
+.TeamTable {
+  width: 100%;
+}
+.RightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  height: 81vh;
+  overflow-y: scroll;
+}
+.CreatePodComponent {
+  border: 2px dashed var(--border-grey);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 8px;
+}
+.CreatePodTip {
+  color: var(--font-grey-50);
+}
+.TeamDynamicsWrapper {
+  padding: 1rem;
+}
+.SmallPadding {
+  padding: 1rem;
+}
+.DashboardMenu {
+  padding: 1rem;
+  width: 100%;
+}
+.MenuWrapper {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  width: 100%;
+  padding-left: 0.9rem;
+}
+.FilterImg {
+  margin-left: auto;
+  cursor: pointer;
+}
+.SearchBar {
+  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+}
+.CandidateHeading {
+  font-size: 14px;
+  font-weight: 500;
+}
+.Dot {
+  color: var(--font-grey-50);
+  margin-bottom: 0.4rem;
+}
+.CandidateNumber {
+  color: var(--font-grey-50);
+  font-size: 14px;
+  font-weight: 500;
+}
+.HeadingRow {
+  background: #fafafa;
+}
+
+.inputField {
+  width: 100%;
+  padding: 5px;
+  padding-left: 3rem;
+  background-color: var(--pent-background-grey);
+  border: 2px solid var(--background-grey);
+  font-weight: 600;
+  color: var(--font-grey-50);
+} 
+
+.inputIcons i {
+  position: absolute;
+  margin-right: 10px;
+}
+
+.inputIcons {
+  position: relative;
+  width: 100%;
+}
+
+.icon {
+  padding: 10px;
+  color: rgb(171, 168, 168);
+  min-width: 50px;
+  text-align: center;
+  
+}

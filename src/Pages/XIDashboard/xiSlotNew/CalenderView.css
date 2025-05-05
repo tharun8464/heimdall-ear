@@ -1,0 +1,93 @@
+.calendar {
+    display: flex;
+    flex-direction: column;  
+    max-width: 100%;    
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;  
+ 
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #f0f0f0;
+    flex: 0 0 auto;
+  }
+  
+  .icon {
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .days {
+    display: flex;
+    background-color: #e3e1e1;
+    padding: 8px 0;
+    flex: 0 0 auto;
+    border-radius: 8px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .col {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .cell {
+    flex: 1;
+    padding: 8px;
+    min-height: 100px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  .cell .edit-icon {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+  }
+  
+  .cell.disabled {
+    color: #ddd;
+  }
+  
+  .cell.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .bg {
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0.1;
+  } 
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .body .row {
+    flex: 1;
+  }
+  

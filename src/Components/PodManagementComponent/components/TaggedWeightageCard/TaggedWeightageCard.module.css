@@ -1,0 +1,72 @@
+.common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+.textInfo * {
+  font-size: 14px;
+}
+.textInfo h3 {
+  color: grey;
+}
+
+.imageContainer {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sideContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  cursor: default;
+}
+
+.sideContainer > div:first-child {
+  border: 1px solid rgb(203, 202, 202);
+  border-radius: 5px;
+}
+
+.taggedWeightageInfo {
+  border-right: 1px solid rgb(203, 202, 202);
+  padding: 0px 6px 0px 6px;
+}
+
+.taggedWeightageInfo p:first-child {
+  font-size: 14px;
+  color: #686666;
+}
+
+.sideContainer > div:first-child > div:last-child {
+  padding: 0px 5px 0px 5px;
+}
+
+.gripIcon {
+  font-size: 15px;
+  color: #969595;
+}
+
+.EditableInput {
+  width: 50px; 
+  height: 20px; 
+  font-size: 14px; 
+  margin: 2px; 
+}

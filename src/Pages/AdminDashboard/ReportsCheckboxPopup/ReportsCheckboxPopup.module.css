@@ -1,0 +1,160 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* gap: 1rem;
+    padding: 1rem; */
+  border-radius: 14px;
+  /* width: 680px; */
+  width: 217px;
+  height: 336px;
+  gap: 0px;
+  border: 0px 1px 0px 0px;
+  /* opacity: 0px; */
+  position: absolute;
+  z-index: 9;
+  margin-top: 400px;
+
+  /* justify-content: space-between;
+align-items: center; */
+}
+
+.Layoutt {
+  /* width: 875px;
+  height: 54px;
+  padding: 15px 709px 11px 27px;
+  gap: 301.75px;
+  border-radius: 23.47px 23.47px 0px 0px;
+  opacity: 0px;
+  box-shadow: 0px 1.68px 6.71px 0px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 1);
+   */
+  display: flex;
+  flex: 20;
+  /* color: #FFFFFF; */
+  /* background-color: yellow; */
+  align-items: center;
+  /* width: 604px;
+height: 54px;
+padding: 15.09px 12px 15.21px 33.39px;
+gap: 301.75px;
+border-radius: 23.47px 23.47px 0px 0px;
+opacity: 0px;
+background-color: rgba(255, 255, 255, 1);
+box-shadow: 0px 1.68px 6.71px 0px rgba(0, 0, 0, 0.15); */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* background-color: yellow; */
+}
+
+.Heading {
+  width: 62px;
+  height: 19px;
+  /* top: 20px;
+left: 20px; */
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 16px;
+  font-weight: 590;
+  line-height: 19.09px;
+  text-align: left;
+  color: #333333;
+  margin-left: 20px;
+
+  /* background-color: pink; */
+}
+
+.CheckboxLayout {
+  flex: 60;
+  width: 100%;
+  height: 100%;
+  /* height: 28px; */
+  /* top: 10px;
+left: 20px; */
+  gap: 15px;
+  /* opacity: 0px; */
+  /* background-color: #228276; */
+}
+
+.CheckboxLabelWidth {
+  width: 217px;
+  height: 38px;
+
+  padding: 10px 0px 10px 20px;
+  gap: 87px;
+  border: 0px 0px 1px 0px;
+  /* opacity: 0px; */
+  /* background-color: pink; */
+  /* background-color: #FFFFFF; */
+}
+.CheckBoxWithLabel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* width: 217px; */
+  /* height: 38px; */
+
+  padding: 10px 0px 10px 10px;
+  /* gap: 87px; */
+  border: 0px 0px 1px 0px;
+  /* opacity: 0px; */
+  /* background-color: #FFFFFF; */
+}
+.CheckLabel {
+  width: 100px;
+  height: 17px;
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 14px;
+  font-weight: 510;
+  line-height: 16.71px;
+  /* text-align: left; */
+  color: #333333;
+}
+
+.BottomShareButton {
+  flex: 15;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 21px;
+}
+
+.ApplyText {
+  /* width: 47px;
+height: 20px;
+
+gap: 0px;
+opacity: 0px;
+font-family: SF Pro;
+font-size: 16.76px;
+font-weight: 510;
+line-height: 20.01px;
+text-align: right;
+color: #FFFFFF; */
+  width: 35px;
+  height: 16px;
+  gap: 0px;
+  /* opacity: 0px; */
+  /* font-family: SF Pro; */
+  font-size: 12px;
+  font-weight: 590;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+.AddCandidateBtn {
+  /* padding: 0px 13px; */
+  /* width: 117.35px; */
+  width: 59px;
+  height: 28px;
+
+  padding: 6px 12px 6px 12px;
+  gap: 10px;
+  border-radius: 8px;
+  /* opacity: 0px; */
+}

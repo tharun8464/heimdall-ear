@@ -1,0 +1,62 @@
+.Input {
+  border-radius: 8px;
+  border: 2px solid var(--border-grey);
+  background: var(--white);
+  font-size: 14px;
+  color: var(--font-grey);
+}
+.Input:focus {
+  outline: none;
+  border: 2px solid var(--border-grey);
+  box-shadow: none;
+}
+.Input::placeholder {
+  color: #999;
+  font-weight: 400;
+}
+
+/* dropmenu */
+.dropMenuContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  /* border: 2px solid var(--border-grey);
+  border-radius: 8px; */
+  padding: 1px 8px;
+  cursor: default;
+}
+
+.isErrorState {
+  border: 2px solid rgba(214, 97, 90, 1);
+}
+
+.dropMenuContainer div p {
+  font-size: 13px;
+}
+
+.dropMenuContainer div p {
+  font-size: 13px;
+}
+
+.gripIcon {
+  font-size: 15px;
+  color: #969595;
+}
+
+.ErrorMessage {
+  color: rgba(214, 97, 90, 1);
+  font-size: 12px;
+}
+.disabled {
+  background-color: #f0f0f0; /* Light grey background to indicate disabled state */
+  color: #ccc; /* Dimmed text color */
+  cursor: not-allowed; /* Cursor indicates the input is not interactive */
+  border: 2px solid #efeeee; /* Matching border color to text */
+}
+
+/* ======= */
+.common {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

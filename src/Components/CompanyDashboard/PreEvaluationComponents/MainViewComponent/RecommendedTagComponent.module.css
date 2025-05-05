@@ -1,0 +1,36 @@
+.TriangularDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 16px;
+    position: relative;
+    color: white;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(34, 130, 118, 0.85) 0%, #228276 100%);
+    font-size: 12px;
+    overflow: hidden;
+  }
+  
+  .TriangularDiv::before, .TriangularDiv::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .TriangularDiv::before {
+    border-style: solid;
+    border-width: 8px 8px 8px 0px;
+    border-color: transparent white transparent transparent;
+    top: 0;
+    right: 0;
+    
+  }
+  
+  .TriangularDiv::after {
+    border-style: solid;
+    border-width: 8px 0px 8px 8px;
+    border-color:  transparent transparent transparent white;
+    bottom: 0;
+    left: 0;
+  }

@@ -1,0 +1,84 @@
+.tagMenuContainer {
+    position: absolute;    
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid var(--border-grey);
+    z-index: 100;
+  }
+  .enterProportion {
+    font-weight: 500;
+  }
+  .common {
+    display: flex;
+  
+  }
+  
+  .container {
+    height: 120px; /* Adjust height as needed */
+    margin: 10px 12px;  
+    flex-direction: column;  
+    overflow-y: scroll;
+    
+  }
+
+  .fullWidth {
+    width: 100%;
+    height: auto; /* Let height be determined by content */
+    border: 2px solid green;
+    border-radius: 12px;
+   
+    box-sizing: border-box;
+    cursor: pointer;
+  padding-left: 40%;
+    margin-top: 10px;
+   
+  }
+  .buttonContainer {
+    margin-bottom: 10px;
+    gap: 5px;
+    padding-left: 20px;
+  }
+  .btnStyle {
+    background-color: rgb(241, 216, 211);
+    padding: 0.2rem 1rem;
+    color: rgb(243, 99, 70);
+    border: 1px solid rgb(243, 99, 70); 
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .deleteWeightage {
+    background-color: rgb(240, 147, 129);
+    border: 1px solid rgb(243, 99, 70); 
+    padding: 0.3rem 1rem;
+    width: 100px;
+  }
+
+  .cancelWeightage {
+    color: rgb(243, 99, 70);
+    border: 1px solid rgb(243, 99, 70); 
+    padding: 0.3rem 1rem;
+    width: 100px;
+  }
+
+  .btnStyleAfterClick {
+    padding: 3px 10px;
+    background-color: var(--primary-green);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  
+  .deleteAllBtn{
+    padding: 2px 10px;
+    background-color: rgb(253, 253, 253);
+    color: rgb(235, 137, 51);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+  }

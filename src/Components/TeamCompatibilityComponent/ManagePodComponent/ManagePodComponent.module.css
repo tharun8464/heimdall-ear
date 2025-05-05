@@ -1,0 +1,122 @@
+.Wrapper {
+  position: absolute;
+  right: 0;
+  top: 58px;
+  border-top: 5px solid var(--primary-green);
+  background: #fff;
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+  z-index: 9;
+
+  /* padding: 2rem; */
+  width: 440px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  height: 100vh;
+}
+
+.Dot {
+  color: var(--font-grey-50);
+  margin-bottom: 0.4rem;
+}
+
+.inputField {
+  width: 50%;
+  padding: 5px;
+  padding-left: 3rem;
+  background-color: var(--pent-background-grey);
+  border: 2px solid var(--background-grey);
+  font-weight: 600;
+  color: var(--font-grey-50);
+} 
+
+.icon {
+  padding: 10px;
+  color: rgb(171, 168, 168);
+  min-width: 50px;
+  text-align: center;
+}
+.inputIcons i {
+  position: absolute;
+  margin-right: 10px;
+}
+
+.inputIcons {
+  position: relative;
+  width: 100%;
+}
+.HeadingWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-grey);
+}
+.Heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.BtnClass {
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+}
+.BtnWrapper,
+.BottomBtnsWrapper {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--background-grey);
+  align-items: center;
+  border-top: 1px solid var(--border-grey);
+  border-bottom: 1px solid var(--border-grey);
+  padding: 0 1rem;
+}
+.BottomBtnsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding: 0 1rem;
+  border-top: 1px solid var(--border-grey);
+  width: 100%;
+  padding-top: 0.6rem;
+}
+
+.Input {
+  width: 100% !important;
+}
+.Close {
+  cursor: pointer;
+}
+
+.CreatePod {
+  color: var(--primary-green);
+  font-size: 14px;
+  font-weight: 600;
+}
+.Subheading {
+  font-size: 14px;
+  font-weight: 500;
+}
+.InputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0 1rem;
+}
+.CreatePodTextWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.PodCardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem; /* Adjust the gap value as needed */
+  padding: 0 1rem;
+}

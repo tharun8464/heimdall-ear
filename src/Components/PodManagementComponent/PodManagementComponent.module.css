@@ -1,0 +1,26 @@
+.Wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  height: 90vh;
+  background-color: var(--white);
+  border-radius: 12px;   
+}
+.page {
+  display: flex;
+  height: 100vh;
+}
+
+.section {
+  border: 1px solid #ddd;
+}
+
+.smallColumn {
+  flex: 1;
+}
+
+.largeColumn {
+  flex: 2;
+}
+.MembersList {
+  border: 2px solid var(--border-grey);
+}

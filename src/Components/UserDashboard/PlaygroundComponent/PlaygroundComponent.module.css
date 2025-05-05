@@ -1,0 +1,75 @@
+.Wrapper {
+  /* width: 612px; */
+  padding: 30px;
+  gap: 18px;
+  border-radius: 12px;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.SelectInput {
+  width: 100%;
+  margin-top: 2px;
+}
+.MicLevelWrapper {
+  width: 100%;
+  height: 10px;
+  background-color: var(--light-green-success);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 7px;
+}
+
+.MicLevelBar {
+  height: 100%;
+  background-color: var(--primary-green);
+  transition: width 0.1s ease-in-out;
+}
+.ExitButton {
+  background: rgba(214, 97, 90, 1);
+}
+/* navbar */
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 8px 15px;
+}
+.LogoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.Logo {
+  width: 70.118px;
+  height: 30px;
+}
+.Heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+.TroubleText {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+.ContactBtn {
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  display: inline-flex;
+  padding: 8px 20px;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.NavLinks {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}

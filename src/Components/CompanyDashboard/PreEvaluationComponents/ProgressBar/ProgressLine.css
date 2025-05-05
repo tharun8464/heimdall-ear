@@ -1,0 +1,57 @@
+.progressVisualPart {
+  transition: width 2s;
+}
+
+.progressVisualPart.roundedLeft {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.progressVisualPart.roundedRight {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.progressIndicatorOverlay {
+  position: absolute;
+  margin: 2px;
+  top: -10px; /* Move the progress image up by adjusting the top property */
+  transform: translateX(-50%);
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  color: transparent; /* Make the text transparent */
+  white-space: nowrap;
+  background: url('../../../../assets/images/Reports/MatchIndicator.png') center center no-repeat;
+  background-size: 70%; /* Adjust as needed */
+  background-position: center top -5px; /* Move 2 pixels up */
+}
+
+.progressVisualFull {
+  position: relative;
+  display: flex;
+  height: 10px;
+  margin: 10px 0; /* Increase the margin to move the progress bar down */
+}
+  
+  .progressVisualPart {
+    /* Number of the seconds for complete animation */
+    transition: width 2s;
+  }
+  .progressVisualPart.roundedLeft {
+    border-top-left-radius: 5px; /* Adjust the radius as needed */
+    border-bottom-left-radius: 5px;
+  }
+  
+  .progressVisualPart.roundedRight {
+    border-top-right-radius: 5px; /* Adjust the radius as needed */
+    border-bottom-right-radius: 5px;
+  }
+  
+  .progressLabel {
+    /* Nothing here, move along */
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+ 
+  

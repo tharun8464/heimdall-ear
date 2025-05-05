@@ -1,0 +1,70 @@
+.TabsWrapper {
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.ActiveTab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    box-shadow: 0px 2px 4px 0px #00000014;
+
+}
+
+.CloseBtn {
+    cursor: pointer;
+    position: absolute;    
+    right: 10px;
+    top: 20px;
+  }
+
+.AddCandidateBtn {
+    padding: 2px 13px;
+}
+
+.BackBtnWrapper {
+    padding-left: 1rem;
+    font-size: 15px;
+    gap: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.RightPadding {
+    padding-right: 10px;
+}
+
+.LeftPadding {
+    padding-left: 10px;
+}
+
+.inputField {
+    width: 100%;
+    padding: 5px;
+    padding-left: 3rem;
+    background-color: #EEEEEE;
+    border: 2px solid var(--background-grey);
+    font-weight: 600;
+    color: var(--font-grey-50);
+  }
+  
+  .inputIcons i {
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  
+  .inputIcons {
+    position: relative;
+    /* width: 100%; */
+  }
+
+  .icon {
+    padding: 10px;
+    color: rgb(171, 168, 168);
+    min-width: 50px;
+    text-align: center;
+  }

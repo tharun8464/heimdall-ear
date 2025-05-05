@@ -1,0 +1,37 @@
+.Wrapper {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.TabsWrapper {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.TabsPadding {
+  padding: 0 10px;
+}
+.ActiveTab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 2px 4px 0px #00000014;
+  padding: 0 1rem;
+}
+.AddCandidateBtn {
+  padding: 2px 13px;
+}
+.BackBtnWrapper {
+  padding-left: 1rem;
+  font-size: 16px;
+  gap: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.RightPadding {
+  padding-right: 10px;
+}
+.LeftPadding {
+  padding-left: 10px;
+}

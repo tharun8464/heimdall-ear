@@ -1,0 +1,11 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.NoReportsMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust as needed */
+}

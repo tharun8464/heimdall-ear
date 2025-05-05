@@ -1,0 +1,41 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px 15px;
+  align-items: center;
+}
+.LogoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.Logo {
+  width: 70.118px;
+  height: 30px;
+}
+.Heading {
+  font-size: 20px;
+  font-weight: 500;
+}
+.TroubleText {
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+}
+.ContactBtn {
+  border-radius: 8px;
+  border: 1px solid #e3e3e3;
+  display: inline-flex;
+  padding: 8px 20px;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.NavLinks {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}

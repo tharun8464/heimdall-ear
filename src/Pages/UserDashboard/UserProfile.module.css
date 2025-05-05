@@ -1,0 +1,103 @@
+.UpperProfileWrapper {
+  border: 1px solid var(--font-grey-10);
+  padding: 2rem;
+  display: flex;
+  gap: 3rem;
+  border-radius: 14px;
+  justify-content: center;
+}
+.UserNameWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.Heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.Username {
+  color: rgba(116, 116, 116, 1);
+  font-size: 16px;
+  font-weight: 400;
+}
+.UserInfoUpperSection {
+}
+.RightSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.CheckpointWrapper {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.Circle {
+  border-radius: 50%;
+  border: 2px solid var(--primary-green);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--primary-green);
+  font-size: 12px;
+  font-weight: 500;
+}
+.Checkpoint {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.CheckpointItem {
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+}
+.EditImg {
+  margin-left: auto;
+}
+.UserInfo {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+.CheckIcon {
+  color: var(--primary-green);
+  font-size: 1rem !important;
+}
+.UserProfileImg {
+  min-width: 170px;
+  min-height: 170px;
+  width: 2rem;
+  top: 55.5px;
+  left: 70.5px;
+  gap: 0px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.MobileBackground {
+  display: none;
+}
+.MobileProfileWrapper {
+  padding: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .MobileBackground {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  .MobileProfileWrapper {
+    padding: 0;
+  }
+  .TabsWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .UpperProfileWrapper {
+    display: none;
+  }
+}

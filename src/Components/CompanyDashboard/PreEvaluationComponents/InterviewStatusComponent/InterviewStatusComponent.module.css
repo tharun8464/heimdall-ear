@@ -1,0 +1,75 @@
+.Wrapper {
+  position: absolute;
+  right: 0;
+  top: 58px;
+  border-top: 5px solid var(--primary-green);
+  background: #fff;
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.22);
+  z-index: 9;
+
+  /* padding: 2rem; */
+  width: 440px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  height: 100vh;
+}
+.HeadingWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-grey);
+}
+.Heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+.StatsComponent {
+  background-color: var(--primary-green);
+  color: var(--white);
+
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+}
+.StatWrapper {
+  width: 12rem;
+  background-color: var(--sec-background-grey);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  justify-content: center;
+}
+.GraphHeading {
+  color: var(--font-grey-50);
+  font-weight: 600;
+  font-size: 16px;
+}
+.GraphWrapper {
+  width: 150px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.AllgraphWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.StatNumber {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  font-size: 24px;
+  font-weight: 600;
+  transform: translate(50%, -36%);
+}
+.SubHeading {
+  font-size: 24px;
+  font-weight: 600;
+}

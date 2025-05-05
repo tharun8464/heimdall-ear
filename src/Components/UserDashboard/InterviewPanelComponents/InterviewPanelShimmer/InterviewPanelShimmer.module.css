@@ -1,0 +1,40 @@
+.Wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.StepsShimmer {
+  display: flex;
+  gap: 1.2rem;
+}
+.WebcamShimmerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 30rem;
+}
+.SidebarShimmer {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  margin-right: 8rem;
+  align-self: flex-start;
+  margin-top: 6rem;
+}
+.NavbarShimmer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  padding-top: 1rem;
+}
+.LogoWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.MenuWrapper {
+  display: flex;
+  gap: 1rem;
+  margin-right: 3rem;
+}
