@@ -1,0 +1,61 @@
+name: Build & Deploy React Frontend to GCP VM
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: |
+        docker build \
+          --build-arg REACT_APP_BACKEND_URL=https://api.example.com \
+          --build-arg REACT_APP_FRONTEND_URL=https://app.example.com \
+          --build-arg REACT_APP_HEIMDALL_BASELINING_URL=https://heimdall-baseline.example.com \
+          --build-arg REACT_APP_HEIMDALL_URL=https://heimdall.example.com \
+          --build-arg REACT_APP_PSY_URL=https://psy.example.com \
+          --build-arg REACT_APP_DYTE_ORGID=your-org-id \
+          --build-arg REACT_APP_DYTE_APIKEY=your-api-key \
+          --build-arg REACT_APP_COGNITION_API_KEY_LABEL=label123 \
+          --build-arg REACT_APP_COGNITION_URL=https://cognition.example.com \
+          --build-arg REACT_APP_CHALLENGE_URL=https://challenge.example.com \
+          --build-arg REACT_APP_CHALLENGE_TRAIT_URL=https://traits.example.com \
+          --build-arg REACT_APP_COGNITION_API_KEY=apikey123 \
+          --build-arg REACT_APP_NEW_HEIMDALL_BASELINING_URL=https://new-baseline.example.com \
+          --build-arg REACT_APP_DS_CLIENT_ID=client-id \
+          --build-arg REACT_APP_DS_CLIENT_SECRET=client-secret \
+          --build-arg REACT_APP_HEIMDALL_BASE_URL=https://base.example.com \
+          --build-arg REACT_APP_SHARE_REPORT_URL=https://report.example.com \
+          -t frontend-app:latest .
+
+    - name: Save Docker image to tarball
+      run: docker save frontend-app:latest -o frontend-app.tar
+
+    - name: Set up SSH
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.GCP_SSH_KEY }}" > ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        ssh-keyscan -H ${{ secrets.GCP_HOST }} >> ~/.ssh/known_hosts
+
+    - name: Copy Docker image to GCP VM
+      run: |
+        scp -i ~/.ssh/id_ed25519 frontend-app.tar ${{ secrets.GCP_USER }}@${{ secrets.GCP_HOST }}:/home/${{ secrets.GCP_USER }}/
+
+    - name: Load and run on GCP VM
+      run: |
+        ssh -i ~/.ssh/id_ed25519 ${{ secrets.GCP_USER }}@${{ secrets.GCP_HOST }} << 'EOF'
+          docker stop frontend-app || true
+          docker rm frontend-app || true
+          docker load -i frontend-app.tar
+          docker run -d \
+            --name frontend-app \
+            -p 9200:9200 \
+            frontend-app:latest
+        EOF
